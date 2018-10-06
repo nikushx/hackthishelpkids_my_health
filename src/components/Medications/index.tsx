@@ -15,11 +15,28 @@ type Props = {
 class Medications extends React.Component<Props> {
   render() {
     console.log(this.props.personalHistory);
-    return (
-      <div className="Medications">
+      return (
+        <div className="Medications">
         {
-          
-        } a
+          this.props.personalHistory.map((medication: any, i: number) => {
+            return(
+              <div style={historyBlock} key={i}>
+                <span>
+                  {medication.medicine}
+                </span>
+                <br/>
+                <span>
+                  <b>{medication.prescribed_date}</b>
+                </span>
+                <br/>
+                <span>
+                  <b>{medication.frequency}</b>
+                </span>
+              </div>
+            )
+          })
+        }
+      }
       </div>
     );
   }
