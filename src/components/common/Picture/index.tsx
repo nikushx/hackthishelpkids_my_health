@@ -3,7 +3,6 @@ import * as React from 'react';
 const imgStyle: React.CSSProperties = {
   height: "100px",
   width: "100px",
-  float: "left"
 }
 
 type Props = {
