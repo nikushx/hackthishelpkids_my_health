@@ -5,6 +5,7 @@ import { cmdActions, CMDAction } from '../../store/cmd';
 import { connect } from 'react-redux';
 import { Dispatch, bindActionCreators } from 'redux';
 import LoginButtons from '../LoginButtons';
+import Logo from '../../components/common/Logo';
 import LoginForm from '../LoginForm';
 
 const cmdWindowStyles: React.CSSProperties = {
@@ -36,6 +37,7 @@ class IHomePage extends React.Component<Props, State> {
       <div style={cmdWindowStyles}>
         <LoginForm />
         <LoginButtons/>
+        <Logo image='/my_health.png'/>
       </div>
     );
   }
