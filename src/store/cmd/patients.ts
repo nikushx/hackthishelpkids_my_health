@@ -1,6 +1,7 @@
 const patientData = {
   patients: [
     {
+      image: '/Patients/sean.jpg',
       id: '1',
       relation: 'self',
       name: 'Sean Freeman',
@@ -65,6 +66,7 @@ const patientData = {
       ]
     },
     {
+      image: '/Patients/dan.jpg',
       id: '2',
       relation: 'brother',
       name: 'Dan Mayhak',
@@ -137,6 +139,7 @@ const patientData = {
       ]
     },
     {
+      image: '/Patients/emily.jpg',
       id: '3',
       relation: 'wife',
       name: 'Emily Sutter',
@@ -204,6 +207,7 @@ const patientData = {
       ]
     },
     {
+      image: '/Patients/stew.jpg',
       id: '4',
       relation: 'son',
       name: 'Stew Edwards',
@@ -276,6 +280,7 @@ const patientData = {
       ]
     },
     {
+      image: '/Patients/jane.jpg',
       id: '5',
       relation: 'daughter',
       name: 'Jane Ericson',
@@ -351,6 +356,7 @@ const patientData = {
       ]
     },
     // {
+    //   image: '',
     //   id: '6',
     //   relation: 'nephew',
     //   name: 'Jack Bigelow',
@@ -405,6 +411,7 @@ const patientData = {
     //   ]
     // },
     {
+      image: '/Patients/eric.jpg',
       id: '7',
       relation: 'brother',
       name: 'Eric Acosta',
@@ -465,6 +472,7 @@ const patientData = {
       ]
     },
     {
+      image: '/Patients/madeline.jpg',
       id: '8',
       relation: 'daughter',
       name: 'Madeline Rogers',

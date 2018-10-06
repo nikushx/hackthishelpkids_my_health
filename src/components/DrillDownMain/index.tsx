@@ -4,13 +4,33 @@ import rootReducer from '../../store/root-reducer';
 import { cmdActions, CMDAction } from '../../store/cmd';
 import { connect } from 'react-redux';
 import { Dispatch, bindActionCreators } from 'redux';
+import Picture from '../common/Picture';
+import FamilyHistory from '../FamilyHistory';
 
 const drillDownStyles: React.CSSProperties = {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
   color: 'black',
-  height: '100vh'
+  height: '100vh',
+  flexDirection: 'column'
+}
+
+const drillDownInfoStyles: React.CSSProperties = {
+  backgroundColor: '#fff',
+  width: '800px',
+  minHeight: '200px',
+  marginTop: '-50px',
+  boxShadow: '1px 1px 5px #000',
+  padding: '10px'
+}
+
+const drillDownName: React.CSSProperties = {
+  width: '100%',
+  textAlign: 'center',
+  display: 'block',
+  paddingTop: '100px',
+  fontSize: '36px'
 }
 
 export type Props = {
@@ -25,7 +45,7 @@ type State = {
 };
 
 class IDrillDownMain extends React.Component<Props, State> {
-  state = { id: '', patient: {} }
+  state = { id: '', patient: { image: '', name: '', family_history: {} } }
 
   componentDidMount() {
     const url = window.location.href;
@@ -48,7 +68,11 @@ class IDrillDownMain extends React.Component<Props, State> {
   render() {
     return (
       <div style={drillDownStyles}>
-        k
+        <Picture image={this.state.patient.image} />
+        <div style={drillDownInfoStyles}>
+          <span style={drillDownName}>{this.state.patient.name}</span>
+          <FamilyHistory personalHistory={this.state.patient.family_history} />
+        </div>
       </div>
     );
   }

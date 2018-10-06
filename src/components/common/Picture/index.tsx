@@ -1,8 +1,10 @@
 import * as React from 'react';
 
 const imgStyle: React.CSSProperties = {
-  height: "100px",
-  width: "100px",
+  height: "200px",
+  width: "200px",
+  borderRadius: '100px',
+  boxShadow: '1px 1px 20px #000'
 }
 
 type Props = {
@@ -14,6 +16,7 @@ class Picture extends React.Component<Props> {
     return (
       <img src={this.props.image}
            style={imgStyle}
+           className="drillDownImage"
       />
     );
   }
