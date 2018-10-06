@@ -2,14 +2,14 @@ import * as React from 'react';
 
 import { HomePage } from '../Home';
 
-class App extends React.Component {
+class Login extends React.Component {
   render() {
     return (
-      <div className="App">
+      <div className="Login">
         <HomePage />
       </div>
     );
   }
 }
 
-export default App;
+export default Login;

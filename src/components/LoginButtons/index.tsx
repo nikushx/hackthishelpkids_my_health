@@ -1,5 +1,7 @@
 import * as React from 'react';
 import Button from '../common/Button';
+import store from '../../store';
+import { push } from 'connected-react-router';
 
 const loginButtonsStyle: React.CSSProperties = {
   display: 'flex',
@@ -43,7 +45,7 @@ class LoginButtons extends React.Component<{}, State> {
     })
   }
   login() {
-    alert("Login with username and password");
+    store.dispatch(push('/portal'))
   }
   loginWithFacebook() {
     alert("Login with Facebook");
