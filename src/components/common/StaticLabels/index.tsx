@@ -1,7 +1,9 @@
 import * as React from 'react';
+import store from '../../../store';
+import { push } from 'connected-react-router';
 
 const labelStyles: React.CSSProperties = {
-  width: '400px',
+  width: '300px',
   height: '60px',
   border: '1px solid #666',
   padding: '10px 20px',
@@ -18,22 +20,28 @@ const relationStyles: React.CSSProperties = {
 }
 
 type Props = {
+    id: string;
     text: string;
     relation: string;
 }
 
 class StaticLabels extends React.Component<Props>{
-      render() {
-        return (
-          <div style={labelStyles}>
-            <label>
-              {this.props.text}
-            </label>
-            <label style={relationStyles}>
-              {this.props.relation}
-            </label>
-          </div>
-        );
-      }
+
+  goToDrillDown = () => {
+    store.dispatch(push(`/portal/${this.props.id}`));
+  }
+
+  render() {
+    return (
+      <div style={labelStyles} onClick={this.goToDrillDown}>
+        <label>
+          {this.props.text}
+        </label>
+        <label style={relationStyles}>
+          {this.props.relation}
+        </label>
+      </div>
+    );
+  }
 }
 export default StaticLabels;

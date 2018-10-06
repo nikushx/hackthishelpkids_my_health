@@ -9,6 +9,7 @@ import { ConnectedRouter } from 'connected-react-router';
 import { History } from 'history';
 import { history } from './store/store'
 import { Switch, Route } from 'react-router-dom';
+import { DrillDownMain } from './components/DrillDownMain';
 
 interface AppHistory {
   historyAttr: History
@@ -22,6 +23,7 @@ const renderApp = (Login: any, { historyAttr }: AppHistory) => {
           <Switch>
             <Route exact path="/" render={() => (<Login />)} />
             <Route exact path="/portal" render={() => (<Portal />)} />
+            <Route exact path="/portal/:id" render={() => (<DrillDownMain />)} />
             <Route render={() => (<div>Miss</div>)} />
           </Switch>
         </div>
