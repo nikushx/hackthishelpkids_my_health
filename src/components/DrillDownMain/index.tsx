@@ -15,14 +15,12 @@ const drillDownStyles: React.CSSProperties = {
   alignItems: 'center',
   justifyContent: 'center',
   color: 'black',
-  height: '100vh',
   flexDirection: 'column'
 }
 
 const drillDownInfoStyles: React.CSSProperties = {
   backgroundColor: '#fff',
   width: '800px',
-  minHeight: '200px',
   marginTop: '-50px',
   boxShadow: '1px 1px 5px #000',
   padding: '10px'
@@ -97,8 +95,10 @@ class IDrillDownMain extends React.Component<Props, State> {
           <span style={drillDownHeading}>Medical History</span>
           <MedicalHistory personalHistory={this.state.patient.medical_history} />
           <hr style={{ borderWidth: '0.5px', width: '40%' }} />
+          <span style={drillDownHeading}>Medications</span>
           <Medications personalHistory={this.state.patient.medications} />
           <hr style={{ borderWidth: '0.5px', width: '40%' }} />
+          <span style={drillDownHeading}>Allergies</span>
           <AllergyHistory personalHistory={this.state.patient.allergies} />
         </div>
       </div>

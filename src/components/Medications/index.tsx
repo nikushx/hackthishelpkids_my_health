@@ -26,17 +26,16 @@ class Medications extends React.Component<Props> {
                 </span>
                 <br/>
                 <span>
-                  <b>{medication.prescribed_date}</b>
+                  {medication.prescribed_date}
                 </span>
                 <br/>
                 <span>
-                  <b>{medication.frequency}</b>
+                  {medication.frequency}
                 </span>
               </div>
             )
           })
         }
-      }
       </div>
     );
   }

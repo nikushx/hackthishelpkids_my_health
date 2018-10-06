@@ -22,15 +22,15 @@ class MedicalHistory extends React.Component<Props> {
             return(
               <div style={historyBlock} key={i}>
                 <span>
-                  Date: {diagnosis.date}
+                  {diagnosis.date}
                 </span>
                 <br/>
                 <span>
-                  Description: {diagnosis.description}
+                  {diagnosis.description}
                 </span>
                 <br/>
                 <span>
-                  Cause: {diagnosis.cause}
+                  {diagnosis.cause}
                 </span>
               </div>
             )
