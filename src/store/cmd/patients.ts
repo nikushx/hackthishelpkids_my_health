@@ -7,11 +7,11 @@ const patientData = {
       name: 'Sean Freeman',
       family_history: [
         {
-          relation: 'mother',
+          relation: 'Mother',
           condition: 'Diabetes'
         },
         {
-          relation: 'father',
+          relation: 'Father',
           condition: 'Alcoholism'
         }
       ],
@@ -68,19 +68,19 @@ const patientData = {
     {
       image: '/Patients/dan.jpg',
       id: '2',
-      relation: 'brother',
+      relation: 'Brother',
       name: 'Dan Mayhak',
       family_history: [
         {
-          relation: 'uncle',
+          relation: 'Uncle',
           condition: 'Crohn\'s Disease'
         },
         {
-          relation: 'father',
+          relation: 'Father',
           condition: 'Pancreatic Cancer'
         },
         {
-          relation: 'sister',
+          relation: 'Sister',
           condition: 'Glaucoma'
         }
       ],
@@ -145,19 +145,19 @@ const patientData = {
       name: 'Emily Sutter',
       family_history: [
         {
-          relation: 'mother',
+          relation: 'Mother',
           condition: 'Ovarian Cancer'
         },
         {
-          relation: 'brother',
+          relation: 'Brother',
           condition: 'Ringworm'
         },
         {
-          relation: 'grandmother',
+          relation: 'Grandmother',
           condition: 'Bipolar Disorder'
         },
         {
-          relation: 'grandfather',
+          relation: 'Grandfather',
           condition: 'Heart Disease'
         }
       ],
@@ -213,23 +213,23 @@ const patientData = {
       name: 'Stew Edwards',
       family_history: [
         {
-          relation: 'aunt',
+          relation: 'Aunt',
           condition: 'Depression'
         },
         {
-          relation: 'sister',
+          relation: 'Sister',
           condition: 'Insomnia'
         },
         {
-          relation: 'brother',
+          relation: 'Brother',
           condition: 'Melanoma'
         },
         {
-          relation: 'father',
+          relation: 'Father',
           condition: 'Measles'
         },
         {
-          relation: 'mother',
+          relation: 'Mother',
           condition: 'Dementia'
         }
       ],
@@ -282,31 +282,31 @@ const patientData = {
     {
       image: '/Patients/jane.jpg',
       id: '5',
-      relation: 'daughter',
+      relation: 'Daughter',
       name: 'Jane Ericson',
       family_history: [
         {
-          relation: 'aunt',
+          relation: 'Aunt',
           condition: 'Depression'
         },
         {
-          relation: 'sister',
+          relation: 'Sister',
           condition: 'Insomnia'
         },
         {
-          relation: 'brother',
+          relation: 'Brother',
           condition: 'Melanoma'
         },
         {
-          relation: 'father',
+          relation: 'Father',
           condition: 'Measles'
         },
         {
-          relation: 'mother',
+          relation: 'Mother',
           condition: 'Dementia'
         },
         {
-          relation: 'sister',
+          relation: 'Sister',
           condition: 'Leukemia'
         }
       ],
@@ -362,11 +362,11 @@ const patientData = {
     //   name: 'Jack Bigelow',
     //   family_history: [
     //     {
-    //       relation: 'brother',
+    //       relation: 'Brother',
     //       condition: 'Sleep Apnea'
     //     },
     //     {
-    //       relation: 'sister',
+    //       relation: 'Sister',
     //       condition: 'Sleep Walking'
     //     }
     //   ],
@@ -413,11 +413,11 @@ const patientData = {
     {
       image: '/Patients/eric.jpg',
       id: '7',
-      relation: 'brother',
+      relation: 'Brother',
       name: 'Eric Acosta',
       family_history: [
         {
-          relation: 'father',
+          relation: 'Father',
           condition: 'Schizophrenia'
         }
       ],
@@ -478,15 +478,15 @@ const patientData = {
       name: 'Madeline Rogers',
       family_history: [
         {
-          relation: 'mother',
+          relation: 'Mother',
           condition: 'Stroke'
         },
         {
-          relation: 'father',
+          relation: 'Father',
           condition: 'Cardiac Arrest'
         },
         {
-          relation: 'sister',
+          relation: 'Sister',
           condition: 'Heart Disease'
         }
       ],

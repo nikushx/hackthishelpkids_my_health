@@ -1,5 +1,13 @@
 import * as React from 'react';
 
+const historyBlock: React.CSSProperties = {
+  width: '50%',
+  display: 'inline-block',
+  textAlign: 'center',
+  margin: '20px 0',
+  fontSize: '18px'
+}
+
 type Props = {
   personalHistory: any
 }
@@ -12,7 +20,7 @@ class MedicalHistory extends React.Component<Props> {
         {
           this.props.personalHistory.map((diagnosis: any, i: number) => {
             return(
-              <div key={i}>
+              <div style={historyBlock} key={i}>
                 <span>
                   Date: {diagnosis.date}
                 </span>

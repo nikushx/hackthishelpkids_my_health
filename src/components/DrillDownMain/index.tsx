@@ -7,6 +7,7 @@ import { Dispatch, bindActionCreators } from 'redux';
 import Picture from '../common/Picture';
 import FamilyHistory from '../FamilyHistory';
 import MedicalHistory from '../MedicalHistory';
+import Medications from '../Medications';
 
 const drillDownStyles: React.CSSProperties = {
   display: 'flex',
@@ -31,7 +32,17 @@ const drillDownName: React.CSSProperties = {
   textAlign: 'center',
   display: 'block',
   paddingTop: '100px',
-  fontSize: '36px'
+  fontSize: '36px',
+  fontWeight: 'bold'
+}
+
+const drillDownHeading: React.CSSProperties = {
+  width: '100%',
+  textAlign: 'center',
+  display: 'block',
+  paddingTop: '10px',
+  fontSize: '24px',
+  color: 'slate'
 }
 
 export type Props = {
@@ -50,7 +61,8 @@ class IDrillDownMain extends React.Component<Props, State> {
     image: '', 
     name: '', 
     family_history: [], 
-    medical_history: [] 
+    medical_history: [],
+    medications: []
   } }
 
   componentDidMount() {
@@ -77,8 +89,13 @@ class IDrillDownMain extends React.Component<Props, State> {
         <Picture image={this.state.patient.image} />
         <div style={drillDownInfoStyles}>
           <span style={drillDownName}>{this.state.patient.name}</span>
+          <span style={drillDownHeading}>Family History</span>
           <FamilyHistory personalHistory={this.state.patient.family_history} />
+          <hr style={{ borderWidth: '0.5px', width: '40%' }} />
+          <span style={drillDownHeading}>Medical History</span>
           <MedicalHistory personalHistory={this.state.patient.medical_history} />
+          <hr style={{ borderWidth: '0.5px', width: '40%' }} />
+          <Medications personalHistory={this.state.patient.medications} />
         </div>
       </div>
     );

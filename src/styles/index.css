@@ -36,3 +36,7 @@ input {
 .drillDownImage {
   z-index: 999;
 }
+
+hr {
+  color: #888;
+}
