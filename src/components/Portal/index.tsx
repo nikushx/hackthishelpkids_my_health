@@ -1,5 +1,5 @@
 import * as React from 'react';
-import DependentList from '../DependentList';
+import {DependentList} from '../DependentList';
 
 class Login extends React.Component {
   render() {

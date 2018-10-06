@@ -3,12 +3,14 @@ import { ActionType } from 'typesafe-actions';
 
 import * as cmd from './actions';
 import { ADD, NEW_COMMAND } from './constants';
+import patientData from './patients';
 
 export type CMDAction = ActionType<typeof cmd>;
 
 export type CMDState = {
   readonly reduxCounter: number;
   readonly cmdLog: string[];
+  readonly patientData: any;
 };
 
 export default combineReducers<CMDState, CMDAction>({
@@ -29,6 +31,12 @@ export default combineReducers<CMDState, CMDAction>({
           ...state,
           action.payload
         ]
+      default:
+        return state;
+    }
+  },
+  patientData: (state = patientData, action) => {
+    switch (action.type) {
       default:
         return state;
     }
