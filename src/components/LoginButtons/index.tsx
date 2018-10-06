@@ -1,20 +1,10 @@
 import * as React from 'react';
 import Button from './common/Button';
 
-type Props = {
-  styles?: React.CSSProperties;
-  placeholder?: string;
-  onChange?: (e: React.FormEvent<HTMLInputElement>) => void;
-  sendCommand: () => void;
-}
 
 class LoginButtons extends React.Component<Props> {
 
-  handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === 'Enter') {
-      this.props.sendCommand();
-    }
-  }
+
   login() {
     alert("Login with username and password");
   }
