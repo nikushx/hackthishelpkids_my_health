@@ -8,6 +8,7 @@ import Picture from '../common/Picture';
 import FamilyHistory from '../FamilyHistory';
 import MedicalHistory from '../MedicalHistory';
 import Medications from '../Medications';
+import AllergyHistory from '../AllergyHistory';
 
 const drillDownStyles: React.CSSProperties = {
   display: 'flex',
@@ -62,7 +63,8 @@ class IDrillDownMain extends React.Component<Props, State> {
     name: '', 
     family_history: [], 
     medical_history: [],
-    medications: []
+    medications: [],
+    allergies: []
   } }
 
   componentDidMount() {
@@ -96,6 +98,8 @@ class IDrillDownMain extends React.Component<Props, State> {
           <MedicalHistory personalHistory={this.state.patient.medical_history} />
           <hr style={{ borderWidth: '0.5px', width: '40%' }} />
           <Medications personalHistory={this.state.patient.medications} />
+          <hr style={{ borderWidth: '0.5px', width: '40%' }} />
+          <AllergyHistory personalHistory={this.state.patient.allergies} />
         </div>
       </div>
     );
