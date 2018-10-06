@@ -6,6 +6,8 @@ import IntroText from '../../components/common/IntroText';
 import { connect } from 'react-redux';
 import { Dispatch, bindActionCreators } from 'redux';
 import LoginButtons from '../LoginButtons';
+import Logo from '../../components/common/Logo';
+import imageLogo from './my_health.png';
 
 const cmdWindowStyles: React.CSSProperties = {
   padding: '10px'
@@ -37,6 +39,7 @@ class IHomePage extends React.Component<Props, State> {
         <p onClick={this.sendNewCommand}>Hello</p>
         <IntroText>Nikush Dalia</IntroText>
         <LoginButtons/>
+        <Logo image={imageLogo}/>
       </div>
     );
   }
