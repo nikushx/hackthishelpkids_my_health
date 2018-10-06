@@ -1,11 +1,10 @@
 import * as React from 'react';
+import DependentList from '../DependentList';
 
 class Login extends React.Component {
   render() {
     return (
-      <div className="Login">
-        {/*insert*/}
-      </div>
+      <DependentList />
     );
   }
 }
