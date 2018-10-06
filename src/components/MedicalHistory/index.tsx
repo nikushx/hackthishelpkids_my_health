@@ -35,7 +35,7 @@ class MedicalHistory extends React.Component<Props> {
               </div>
             )
           })
-        } 
+        }
       </div>
     );
   }
