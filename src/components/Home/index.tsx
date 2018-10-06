@@ -2,7 +2,6 @@ import * as React from 'react';
 import { StateType } from 'typesafe-actions';
 import rootReducer from '../../store/root-reducer';
 import { cmdActions, CMDAction } from '../../store/cmd';
-import IntroText from '../../components/common/IntroText';
 import { connect } from 'react-redux';
 import { Dispatch, bindActionCreators } from 'redux';
 import LoginButtons from '../LoginButtons';
@@ -35,8 +34,6 @@ class IHomePage extends React.Component<Props, State> {
   render() {
     return (
       <div style={cmdWindowStyles}>
-        <p onClick={this.sendNewCommand}>Hello</p>
-        <IntroText>Nikush Dalia</IntroText>
         <LoginForm />
         <LoginButtons/>
       </div>
