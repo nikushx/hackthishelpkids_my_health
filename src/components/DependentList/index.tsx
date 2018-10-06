@@ -1,8 +1,11 @@
 import * as React from 'react';
 import StaticLabels from '../common/StaticLabels';
+import WelcomeUsername from '../WelcomeUsername';
+import Logo from '../common/Logo';
   
   type Dependents = {
     text: string;
+    relation: string;
   }
   
   type State = {
@@ -18,26 +21,31 @@ import StaticLabels from '../common/StaticLabels';
       this.setState({
         list: [
           {
-            text: 'Stephen'
+            text: 'Sai',
+            relation: 'self'
           },
           {
-            text: 'Laura'
+            text: 'Laura',
+            relation: 'wife'
           },
           {
-            text: 'Shawn'
+            text: 'Shawn',
+            relation: 'son'
           }
         ]
       })
     }
     render() {
       return (
-        <div>
-  
+        <div className="Portal">
+          <Logo image="/my_health.png" />
+          <WelcomeUsername username="Sai" />
           {
             this.state.list.map((dependent, i) => {
               return(
                 <StaticLabels
                   text={dependent.text}
+                  relation={dependent.relation}
                   key={i}
                 />
               );            

@@ -2,6 +2,7 @@ import * as React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import LoginComponent from './components/Login';
+import Portal from './components/Portal';
 import store from './store';
 import './styles/index.css';
 import { ConnectedRouter } from 'connected-react-router';
@@ -20,7 +21,7 @@ const renderApp = (Login: any, { historyAttr }: AppHistory) => {
         <div>
           <Switch>
             <Route exact path="/" render={() => (<Login />)} />
-            <Route exact path="/portal" render={() => (<Login />)} />
+            <Route exact path="/portal" render={() => (<Portal />)} />
             <Route render={() => (<div>Miss</div>)} />
           </Switch>
         </div>
