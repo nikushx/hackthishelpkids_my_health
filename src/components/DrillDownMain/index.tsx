@@ -45,7 +45,7 @@ type State = {
 };
 
 class IDrillDownMain extends React.Component<Props, State> {
-  state = { id: '', patient: { image: '', name: '', family_history: {} } }
+  state = { id: '', patient: { image: '', name: '', family_history: [] } }
 
   componentDidMount() {
     const url = window.location.href;
