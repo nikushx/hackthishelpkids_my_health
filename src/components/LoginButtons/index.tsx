@@ -18,19 +18,19 @@ class LoginButtons extends React.Component<{}, State> {
     this.setState({
       buttons: [
         {
-          bgColor: 'red',
-          text: 'test',
+          bgColor: 'Green',
+          text: 'Login',
           onClick: this.login
         },
         {
-          bgColor: 'red',
-          text: 'test',
-          onClick: this.login
+          bgColor: 'Blue',
+          text: 'Login With Facebook',
+          onClick: this.loginWithFacebook
         },
         {
-          bgColor: 'red',
-          text: 'test',
-          onClick: this.login
+          bgColor: 'Red',
+          text: 'Login With Google',
+          onClick: this.loginWithGoogle
         }
       ]
     })
