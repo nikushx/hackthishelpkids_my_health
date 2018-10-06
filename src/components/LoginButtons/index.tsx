@@ -1,10 +1,17 @@
 import * as React from 'react';
 import Button from '../common/Button';
+
+const loginButtonsStyle: React.CSSProperties = {
+  display: 'flex',
+  flexDirection: 'column'
+}
+
 type ButtonType = {
   bgColor: string;
   text: string;
   onClick: () => void;
 }
+
 type State = {
   buttons: ButtonType[];
 }
@@ -18,17 +25,17 @@ class LoginButtons extends React.Component<{}, State> {
     this.setState({
       buttons: [
         {
-          bgColor: 'Green',
+          bgColor: '#e1ffb1',
           text: 'Login',
           onClick: this.login
         },
         {
-          bgColor: 'Blue',
+          bgColor: '#aed581',
           text: 'Login With Facebook',
           onClick: this.loginWithFacebook
         },
         {
-          bgColor: 'Red',
+          bgColor: '#7da453',
           text: 'Login With Google',
           onClick: this.loginWithGoogle
         }
@@ -46,7 +53,7 @@ class LoginButtons extends React.Component<{}, State> {
   }
   render() {
     return (
-      <div>
+      <div style={loginButtonsStyle}>
 
         {
           this.state.buttons.map((button, i) => {

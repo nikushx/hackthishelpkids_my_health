@@ -1,9 +1,9 @@
 import * as React from 'react';
 
 const btnStyle: React.CSSProperties = {
-  width: '200px',
-  height: '75px',
-  borderRadius: '10px'
+  width: '350px',
+  height: '45px',
+  marginBottom: '5px'
 }
 
 type Props = {
