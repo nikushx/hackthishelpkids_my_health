@@ -26,7 +26,7 @@ class MedicalHistory extends React.Component<Props> {
                 </span>
                 <br/>
                 <span>
-                  {diagnosis.description}
+                  <b>{diagnosis.description}</b>
                 </span>
                 <br/>
                 <span>

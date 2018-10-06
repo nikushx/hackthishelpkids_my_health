@@ -23,7 +23,8 @@ const drillDownInfoStyles: React.CSSProperties = {
   width: '800px',
   marginTop: '-50px',
   boxShadow: '1px 1px 5px #000',
-  padding: '10px'
+  padding: '10px',
+  marginBottom: '100px'
 }
 
 const drillDownName: React.CSSProperties = {

@@ -3,7 +3,7 @@ const patientData = {
     {
       image: '/Patients/sean.jpg',
       id: '1',
-      relation: 'self',
+      relation: 'Self',
       name: 'Sean Freeman',
       family_history: [
         {
@@ -141,7 +141,7 @@ const patientData = {
     {
       image: '/Patients/emily.jpg',
       id: '3',
-      relation: 'wife',
+      relation: 'Wife',
       name: 'Emily Sutter',
       family_history: [
         {
@@ -209,7 +209,7 @@ const patientData = {
     {
       image: '/Patients/stew.jpg',
       id: '4',
-      relation: 'son',
+      relation: 'Son',
       name: 'Stew Edwards',
       family_history: [
         {
@@ -474,7 +474,7 @@ const patientData = {
     {
       image: '/Patients/madeline.jpg',
       id: '8',
-      relation: 'daughter',
+      relation: 'Daughter',
       name: 'Madeline Rogers',
       family_history: [
         {
