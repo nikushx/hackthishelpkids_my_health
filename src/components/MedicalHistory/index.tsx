@@ -10,8 +10,24 @@ class MedicalHistory extends React.Component<Props> {
     return (
       <div className="MedicalHistory">
         {
-          
-        } a
+          this.props.personalHistory.map((familyMember: any, i: number) => {
+            return(
+              <div key={i}>
+                <span>
+                  Date: {familyMember.date}
+                </span>
+                <br/>
+                <span>
+                  Description: {familyMember.description}
+                </span>
+                <br/>
+                <span>
+                  Cause: {familyMember.cause}
+                </span>
+              </div>
+            )
+          })
+        } 
       </div>
     );
   }
