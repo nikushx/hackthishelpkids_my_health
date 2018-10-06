@@ -24,10 +24,6 @@ type State = {
 class IHomePage extends React.Component<Props, State> {
   state = { log: [] }
 
-  addNum = () => {
-    this.props.onIncrement(1);
-  }
-
   sendNewCommand = () => {
     this.props.onSendCommand('NEW LOG');
   }
