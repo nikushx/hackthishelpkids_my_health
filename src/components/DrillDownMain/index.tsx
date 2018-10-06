@@ -6,6 +6,7 @@ import { connect } from 'react-redux';
 import { Dispatch, bindActionCreators } from 'redux';
 import Picture from '../common/Picture';
 import FamilyHistory from '../FamilyHistory';
+import MedicalHistory from '../MedicalHistory';
 
 const drillDownStyles: React.CSSProperties = {
   display: 'flex',
@@ -45,7 +46,12 @@ type State = {
 };
 
 class IDrillDownMain extends React.Component<Props, State> {
-  state = { id: '', patient: { image: '', name: '', family_history: [] } }
+  state = { id: '', patient: { 
+    image: '', 
+    name: '', 
+    family_history: [], 
+    medical_history: [] 
+  } }
 
   componentDidMount() {
     const url = window.location.href;
@@ -72,6 +78,7 @@ class IDrillDownMain extends React.Component<Props, State> {
         <div style={drillDownInfoStyles}>
           <span style={drillDownName}>{this.state.patient.name}</span>
           <FamilyHistory personalHistory={this.state.patient.family_history} />
+          <MedicalHistory personalHistory={this.state.patient.medical_history} />
         </div>
       </div>
     );
