@@ -18,8 +18,20 @@ class AllergyHistory extends React.Component<Props> {
     return (
       <div className="AllergyHistory">
         {
-          
-        } a
+           this.props.personalHistory.map((allergies: any, i: number) => {
+            return(
+              <div  key={i}>
+                <span>
+                  {allergies.allergy}
+                </span>
+                <br/>
+                <span>
+                  {allergies.severity}
+                </span>
+              </div>
+            )
+          })
+        } 
       </div>
     );
   }
