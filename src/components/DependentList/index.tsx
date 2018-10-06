@@ -1,6 +1,5 @@
 import * as React from 'react';
 import StaticLabels from '../common/StaticLabels';
-import WelcomeUsername from '../WelcomeUsername';
 import Logo from '../common/Logo';
 import { StateType } from 'typesafe-actions';
 import { rootReducer } from '../../store';
@@ -44,7 +43,6 @@ import { connect } from 'react-redux';
       return (
         <div className="Portal">
           <Logo image="/my_health.png" />
-          <WelcomeUsername username="Sai" />
           {
             this.state.list.map((dependent) => {
               return(

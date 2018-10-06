@@ -2,7 +2,7 @@ import { combineReducers } from 'redux';
 import { ActionType } from 'typesafe-actions';
 
 import * as cmd from './actions';
-import { ADD, NEW_COMMAND } from './constants';
+import { ADD, NEW_COMMAND, NEW_FAMILY_HISTORY } from './constants';
 import patientData from './patients';
 
 export type CMDAction = ActionType<typeof cmd>;
@@ -36,7 +36,41 @@ export default combineReducers<CMDState, CMDAction>({
     }
   },
   patientData: (state = patientData, action) => {
+    console.log(action.payload);
     switch (action.type) {
+      case NEW_FAMILY_HISTORY:
+        const newState = {
+          ...state,
+          patients: [
+            {
+              ...state.patients[0],
+              family_history: [
+                ...state.patients[0].family_history,
+                {
+                  relation: action.payload.relation,
+                  condition: action.payload.condition
+                }
+              ]
+            },
+            ...state.patients.slice(1)
+          ]
+        }
+        return newState;
+        // return {
+        //   patients: [
+        //     {
+        //       ...state.patients[0],
+        //       family_history: [
+        //         ...state.patients[0].family_history,
+        //         {
+        //           relation: 'Uncle',
+        //           condition: action.payload
+        //         }
+        //       ]
+        //     },
+        //     ...state.patients.slice(1)
+        //   ]
+        // }
       default:
         return state;
     }

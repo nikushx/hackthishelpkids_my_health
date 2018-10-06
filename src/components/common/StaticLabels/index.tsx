@@ -4,7 +4,7 @@ import { push } from 'connected-react-router';
 
 const labelStyles: React.CSSProperties = {
   width: '300px',
-  height: '60px',
+  height: '45px',
   border: '1px solid #666',
   padding: '10px 20px',
   fontSize: '20px',

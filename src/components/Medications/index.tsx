@@ -14,7 +14,6 @@ type Props = {
 
 class Medications extends React.Component<Props> {
   render() {
-    console.log(this.props.personalHistory);
       return (
         <div className="Medications">
         {
