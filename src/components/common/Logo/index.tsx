@@ -1,9 +1,7 @@
 import * as React from 'react';
 
 const imgStyle: React.CSSProperties = {
-  borderRadius: "50%",
-  width: "250px",
-  height: "250px"
+  height: "200px",
 }
 
 type Props = {

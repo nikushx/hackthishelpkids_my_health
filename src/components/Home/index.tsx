@@ -9,7 +9,12 @@ import Logo from '../../components/common/Logo';
 import LoginForm from '../LoginForm';
 
 const cmdWindowStyles: React.CSSProperties = {
-  padding: '10px'
+  padding: '10px',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'space-evenly',
+  height: '100vh',
+  flexDirection: 'column'
 }
 
 export type Props = {
@@ -35,9 +40,9 @@ class IHomePage extends React.Component<Props, State> {
   render() {
     return (
       <div style={cmdWindowStyles}>
+        <Logo image='/my_health.png'/>
         <LoginForm />
         <LoginButtons/>
-        <Logo image='/my_health.png'/>
       </div>
     );
   }
