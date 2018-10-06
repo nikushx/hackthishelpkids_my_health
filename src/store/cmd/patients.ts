@@ -66,147 +66,6 @@ const patientData = {
       ]
     },
     {
-      image: '/Patients/dan.jpg',
-      id: '2',
-      relation: 'Brother',
-      name: 'Dan Mayhak',
-      family_history: [
-        {
-          relation: 'Uncle',
-          condition: 'Crohn\'s Disease'
-        },
-        {
-          relation: 'Father',
-          condition: 'Pancreatic Cancer'
-        },
-        {
-          relation: 'Sister',
-          condition: 'Glaucoma'
-        }
-      ],
-      medical_history: [
-        {
-          date: '11/1/2011',
-          description: 'Knee Replacement',
-          cause: 'Car Accident'
-        },
-        {
-          date: '3/24/2013',
-          description: 'Whooping Cough',
-          cause: 'Seasonal'
-        },
-        {
-          date: '4/28/2014',
-          description: 'Ear Infection',
-          cause: 'Unknown'
-        },
-        {
-          date: '10/29/2015',
-          description: 'Gastric Bypass',
-          cause: 'Obesity'
-        }
-      ],
-      medications: [
-        {
-          medicine: 'Adderall',
-          prescribed_date: '1/19/2000',
-          frequency: 'Daily'
-        },
-        {
-          medicine: 'Vitamin C Supplements',
-          prescribed_date: '7/4/2004',
-          frequency: 'Daily'
-        },
-        {
-          medicine: 'Ativan',
-          prescribed_date: '2/2/2017',
-          frequency: 'Weekly'
-        }
-      ],
-      allergies: [
-        {
-          allergy: 'Latex',
-          severity: 'High'
-        },
-        {
-          allergy: 'Apples',
-          severity: 'Low'
-        },
-        {
-          allergy: 'Chocolate',
-          severity: 'Medium'
-        }
-      ]
-    },
-    {
-      image: '/Patients/emily.jpg',
-      id: '3',
-      relation: 'Wife',
-      name: 'Emily Sutter',
-      family_history: [
-        {
-          relation: 'Mother',
-          condition: 'Ovarian Cancer'
-        },
-        {
-          relation: 'Brother',
-          condition: 'Ringworm'
-        },
-        {
-          relation: 'Grandmother',
-          condition: 'Bipolar Disorder'
-        },
-        {
-          relation: 'Grandfather',
-          condition: 'Heart Disease'
-        }
-      ],
-      medical_history: [
-        {
-          date: '08/12/2000',
-          description: 'Nightsweats',
-          cause: 'Unknown'
-        },
-        {
-          date: '6/1/2007',
-          description: 'Nose Bleeds',
-          cause: 'Dry Nasal Passages'
-        },
-        {
-          date: '9/20/2014',
-          description: 'Lyme Disease',
-          cause: 'Deer Tick'
-        }
-      ],
-      medications: [
-        {
-          medicine: 'Abilify',
-          prescribed_date: '4/30/2008',
-          frequency: 'Daily'
-        },
-        {
-          medicine: 'Lyrica',
-          prescribed_date: '9/12/2009',
-          frequency: 'Daily'
-        },
-        {
-          medicine: 'Concerta',
-          prescribed_date: '5/2/2013',
-          frequency: 'Daily'
-        }
-      ],
-      allergies: [
-        {
-          allergy: 'Peanuts',
-          severity: 'Medium'
-        },
-        {
-          allergy: 'Cats',
-          severity: 'High'
-        }
-      ]
-    },
-    {
       image: '/Patients/stew.jpg',
       id: '4',
       relation: 'Son',
@@ -280,78 +139,143 @@ const patientData = {
       ]
     },
     {
-      image: '/Patients/jane.jpg',
-      id: '5',
-      relation: 'Daughter',
-      name: 'Jane Ericson',
+      image: '/Patients/emily.jpg',
+      id: '3',
+      relation: 'Wife',
+      name: 'Emily Sutter',
       family_history: [
         {
-          relation: 'Aunt',
-          condition: 'Depression'
-        },
-        {
-          relation: 'Sister',
-          condition: 'Insomnia'
+          relation: 'Mother',
+          condition: 'Ovarian Cancer'
         },
         {
           relation: 'Brother',
-          condition: 'Melanoma'
+          condition: 'Ringworm'
         },
         {
-          relation: 'Father',
-          condition: 'Measles'
+          relation: 'Grandmother',
+          condition: 'Bipolar Disorder'
         },
         {
-          relation: 'Mother',
-          condition: 'Dementia'
-        },
-        {
-          relation: 'Sister',
-          condition: 'Leukemia'
+          relation: 'Grandfather',
+          condition: 'Heart Disease'
         }
       ],
       medical_history: [
         {
-          date: '6/12/2009',
-          description: 'Broken Finger',
-          cause: 'Athletics'
-        },
-        {
-          date: '10/14/2010',
-          description: 'Scoliosis',
+          date: '08/12/2000',
+          description: 'Nightsweats',
           cause: 'Unknown'
         },
         {
-          date: '8/16/2015',
-          description: 'Seizure',
-          cause: 'Flashing Lights'
+          date: '6/1/2007',
+          description: 'Nose Bleeds',
+          cause: 'Dry Nasal Passages'
+        },
+        {
+          date: '9/20/2014',
+          description: 'Lyme Disease',
+          cause: 'Deer Tick'
         }
       ],
       medications: [
         {
-          medicine: 'Aspirin',
-          prescribed_date: '5/19/2000',
+          medicine: 'Abilify',
+          prescribed_date: '4/30/2008',
           frequency: 'Daily'
         },
         {
-          medicine: 'Nexium',
-          prescribed_date: '7/12/2002',
-          frequency: 'Weekly'
+          medicine: 'Lyrica',
+          prescribed_date: '9/12/2009',
+          frequency: 'Daily'
         },
         {
-          medicine: 'Lexapro',
-          prescribed_date: '5/23/2008',
+          medicine: 'Concerta',
+          prescribed_date: '5/2/2013',
+          frequency: 'Daily'
+        }
+      ],
+      allergies: [
+        {
+          allergy: 'Peanuts',
+          severity: 'Medium'
+        },
+        {
+          allergy: 'Cats',
+          severity: 'High'
+        }
+      ]
+    },
+    {
+      image: '/Patients/dan.jpg',
+      id: '2',
+      relation: 'Brother',
+      name: 'Dan Mayhak',
+      family_history: [
+        {
+          relation: 'Uncle',
+          condition: 'Crohn\'s Disease'
+        },
+        {
+          relation: 'Father',
+          condition: 'Pancreatic Cancer'
+        },
+        {
+          relation: 'Sister',
+          condition: 'Glaucoma'
+        }
+      ],
+      medical_history: [
+        {
+          date: '11/1/2011',
+          description: 'Knee Replacement',
+          cause: 'Car Accident'
+        },
+        {
+          date: '3/24/2013',
+          description: 'Whooping Cough',
+          cause: 'Seasonal'
+        },
+        {
+          date: '4/28/2014',
+          description: 'Ear Infection',
+          cause: 'Unknown'
+        },
+        {
+          date: '10/29/2015',
+          description: 'Gastric Bypass',
+          cause: 'Obesity'
+        }
+      ],
+      medications: [
+        {
+          medicine: 'Adderall',
+          prescribed_date: '1/19/2000',
+          frequency: 'Daily'
+        },
+        {
+          medicine: 'Vitamin C Supplements',
+          prescribed_date: '7/4/2004',
+          frequency: 'Daily'
+        },
+        {
+          medicine: 'Ativan',
+          prescribed_date: '2/2/2017',
           frequency: 'Weekly'
         }
       ],
       allergies: [
         {
-          allergy: 'Nuts',
+          allergy: 'Latex',
           severity: 'High'
         },
         {
-          allergy: 'Dogs',
+          allergy: 'Apples',
           severity: 'Low'
+        },
+        {
+          allergy: 'Chocolate',
+          severity: 'Medium'
         }
       ]
     },
@@ -467,6 +391,82 @@ const patientData = {
         },
         {
           allergy: 'Citrus',
+          severity: 'Low'
+        }
+      ]
+    },
+    {
+      image: '/Patients/jane.jpg',
+      id: '5',
+      relation: 'Daughter',
+      name: 'Jane Ericson',
+      family_history: [
+        {
+          relation: 'Aunt',
+          condition: 'Depression'
+        },
+        {
+          relation: 'Sister',
+          condition: 'Insomnia'
+        },
+        {
+          relation: 'Brother',
+          condition: 'Melanoma'
+        },
+        {
+          relation: 'Father',
+          condition: 'Measles'
+        },
+        {
+          relation: 'Mother',
+          condition: 'Dementia'
+        },
+        {
+          relation: 'Sister',
+          condition: 'Leukemia'
+        }
+      ],
+      medical_history: [
+        {
+          date: '6/12/2009',
+          description: 'Broken Finger',
+          cause: 'Athletics'
+        },
+        {
+          date: '10/14/2010',
+          description: 'Scoliosis',
+          cause: 'Unknown'
+        },
+        {
+          date: '8/16/2015',
+          description: 'Seizure',
+          cause: 'Flashing Lights'
+        }
+      ],
+      medications: [
+        {
+          medicine: 'Aspirin',
+          prescribed_date: '5/19/2000',
+          frequency: 'Daily'
+        },
+        {
+          medicine: 'Nexium',
+          prescribed_date: '7/12/2002',
+          frequency: 'Weekly'
+        },
+        {
+          medicine: 'Lexapro',
+          prescribed_date: '5/23/2008',
+          frequency: 'Weekly'
+        }
+      ],
+      allergies: [
+        {
+          allergy: 'Nuts',
+          severity: 'High'
+        },
+        {
+          allergy: 'Dogs',
           severity: 'Low'
         }
       ]

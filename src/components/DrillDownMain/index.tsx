@@ -9,6 +9,7 @@ import FamilyHistory from '../FamilyHistory';
 import MedicalHistory from '../MedicalHistory';
 import Medications from '../Medications';
 import AllergyHistory from '../AllergyHistory';
+import CircleButton from '../common/CircleButton';
 
 const drillDownStyles: React.CSSProperties = {
   display: 'flex',
@@ -82,7 +83,21 @@ class IDrillDownMain extends React.Component<Props, State> {
     })
   }
 
+  addFamilyHistory() {
+    alert('now')
+  }
+  
+  addMedicalHistory() {
+    alert('now')
+  }
 
+  addMedsHistory() {
+    alert('now')
+  }
+
+  addAllergyHistory() {
+    alert('now')
+  }
   
   render() {
     return (
@@ -91,15 +106,19 @@ class IDrillDownMain extends React.Component<Props, State> {
         <div style={drillDownInfoStyles}>
           <span style={drillDownName}>{this.state.patient.name}</span>
           <span style={drillDownHeading}>Family History</span>
+          <CircleButton bgColor="white" text="+" onClick={() => this.addFamilyHistory} />
           <FamilyHistory personalHistory={this.state.patient.family_history} />
           <hr style={{ borderWidth: '0.5px', width: '40%' }} />
           <span style={drillDownHeading}>Medical History</span>
+          <CircleButton bgColor="white" text="+" onClick={() => this.addMedicalHistory} />
           <MedicalHistory personalHistory={this.state.patient.medical_history} />
           <hr style={{ borderWidth: '0.5px', width: '40%' }} />
           <span style={drillDownHeading}>Medications</span>
+          <CircleButton bgColor="white" text="+" onClick={() => this.addMedsHistory} />
           <Medications personalHistory={this.state.patient.medications} />
           <hr style={{ borderWidth: '0.5px', width: '40%' }} />
           <span style={drillDownHeading}>Allergies</span>
+          <CircleButton bgColor="white" text="+" onClick={() => this.addAllergyHistory} />
           <AllergyHistory personalHistory={this.state.patient.allergies} />
         </div>
       </div>
