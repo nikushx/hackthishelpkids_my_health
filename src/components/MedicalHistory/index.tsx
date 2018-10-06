@@ -10,19 +10,19 @@ class MedicalHistory extends React.Component<Props> {
     return (
       <div className="MedicalHistory">
         {
-          this.props.personalHistory.map((familyMember: any, i: number) => {
+          this.props.personalHistory.map((diagnosis: any, i: number) => {
             return(
               <div key={i}>
                 <span>
-                  Date: {familyMember.date}
+                  Date: {diagnosis.date}
                 </span>
                 <br/>
                 <span>
-                  Description: {familyMember.description}
+                  Description: {diagnosis.description}
                 </span>
                 <br/>
                 <span>
-                  Cause: {familyMember.cause}
+                  Cause: {diagnosis.cause}
                 </span>
               </div>
             )
