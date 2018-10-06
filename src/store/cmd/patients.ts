@@ -41,12 +41,12 @@ const patientData = {
         {
           medicine: 'Prozac',
           prescribed_date: '2/1/2010',
-          frequency: 'daily'
+          frequency: 'Daily'
         },
         {
           medicine: 'Vitamin E Supplements',
           prescribed_date: '3/24/2010',
-          frequency: 'daily'
+          frequency: 'Daily'
         },
         {
           medicine: 'Xanax',
@@ -57,11 +57,11 @@ const patientData = {
       allergies: [
         {
           allergy: 'Bees',
-          severity: 'high'
+          severity: 'High'
         },
         {
           allergy: 'Citrus',
-          severity: 'low'
+          severity: 'Low'
         }
       ]
     },
@@ -110,31 +110,31 @@ const patientData = {
         {
           medicine: 'Adderall',
           prescribed_date: '1/19/2000',
-          frequency: 'daily'
+          frequency: 'Daily'
         },
         {
           medicine: 'Vitamin C Supplements',
           prescribed_date: '7/4/2004',
-          frequency: 'daily'
+          frequency: 'Daily'
         },
         {
           medicine: 'Ativan',
           prescribed_date: '2/2/2017',
-          frequency: 'weekly'
+          frequency: 'Weekly'
         }
       ],
       allergies: [
         {
           allergy: 'Latex',
-          severity: 'high'
+          severity: 'High'
         },
         {
           allergy: 'Apples',
-          severity: 'low'
+          severity: 'Low'
         },
         {
-          allergies: 'Chocolate',
-          severity: 'medium'
+          allergy: 'Chocolate',
+          severity: 'Medium'
         }
       ]
     },
@@ -182,27 +182,27 @@ const patientData = {
         {
           medicine: 'Abilify',
           prescribed_date: '4/30/2008',
-          frequency: 'daily'
+          frequency: 'Daily'
         },
         {
           medicine: 'Lyrica',
           prescribed_date: '9/12/2009',
-          frequency: 'daily'
+          frequency: 'Daily'
         },
         {
           medicine: 'Concerta',
           prescribed_date: '5/2/2013',
-          frequency: 'daily'
+          frequency: 'Daily'
         }
       ],
       allergies: [
         {
           allergy: 'Peanuts',
-          severity: 'medium'
+          severity: 'Medium'
         },
         {
           allergy: 'Cats',
-          severity: 'high'
+          severity: 'High'
         }
       ]
     },
@@ -259,23 +259,23 @@ const patientData = {
         {
           medicine: 'Humira',
           prescribed_date: '5/10/2002',
-          frequency: 'daily'
+          frequency: 'Daily'
         },
         {
           medicine: 'Kaletra',
           prescribed_date: '7/12/2003',
-          frequency: 'weekly'
+          frequency: 'Weekly'
         },
         {
           medicine: 'Niacin',
           prescribed_date: '5/9/2006',
-          frequency: 'daily'
+          frequency: 'Daily'
         }
       ],
       allergies: [
         {
           allergy: 'Dairy',
-          severity: 'high'
+          severity: 'High'
         }
       ]
     },
@@ -331,27 +331,27 @@ const patientData = {
         {
           medicine: 'Aspirin',
           prescribed_date: '5/19/2000',
-          frequency: 'daily'
+          frequency: 'Daily'
         },
         {
           medicine: 'Nexium',
           prescribed_date: '7/12/2002',
-          frequency: 'weekly'
+          frequency: 'Weekly'
         },
         {
           medicine: 'Lexapro',
           prescribed_date: '5/23/2008',
-          frequency: 'weekly'
+          frequency: 'Weekly'
         }
       ],
       allergies: [
         {
           allergy: 'Nuts',
-          severity: 'high'
+          severity: 'High'
         },
         {
           allergy: 'Dogs',
-          severity: 'low'
+          severity: 'Low'
         }
       ]
     },
@@ -359,7 +359,7 @@ const patientData = {
     //   image: '',
     //   id: '6',
     //   relation: 'nephew',
-    //   name: 'Jack Bigelow',
+    //   name: 'Jack BigeLow',
     //   family_history: [
     //     {
     //       relation: 'Brother',
@@ -396,17 +396,17 @@ const patientData = {
     //     {
     //       medicine: 'Gemzar',
     //       prescribed_date: '1/18/2010',
-    //       frequency: 'daily'
+    //       frequency: 'Daily'
     //     }
     //   ],
     //   allergies: [
     //     {
     //       allergy: 'Soy',
-    //       severity: 'low'
+    //       severity: 'Low'
     //     },
     //     {
     //       allergy: 'Gluten',
-    //       severity: 'high'
+    //       severity: 'High'
     //     }
     //   ]
     // },
@@ -447,12 +447,12 @@ const patientData = {
         {
           medicine: 'Prozac',
           prescribed_date: '2/1/2010',
-          frequency: 'daily'
+          frequency: 'Daily'
         },
         {
           medicine: 'Vitamin Supplements',
           prescribed_date: '3/24/2010',
-          frequency: 'daily'
+          frequency: 'Daily'
         },
         {
           medicine: 'Xanax',
@@ -463,11 +463,11 @@ const patientData = {
       allergies: [
         {
           allergy: 'Bees',
-          severity: 'high'
+          severity: 'High'
         },
         {
           allergy: 'Citrus',
-          severity: 'low'
+          severity: 'Low'
         }
       ]
     },
@@ -506,12 +506,12 @@ const patientData = {
         {
           medicine: 'Klonopin',
           prescribed_date: '3/3/2003',
-          frequency: 'daily'
+          frequency: 'Daily'
         },
         {
           medicine: 'Vitamin D Supplements',
           prescribed_date: '4/1/2005',
-          frequency: 'weekly'
+          frequency: 'Weekly'
         },
         {
           medicine: 'Clobex',
@@ -522,15 +522,15 @@ const patientData = {
       allergies: [
         {
           allergy: 'Shellfish',
-          severity: 'low'
+          severity: 'Low'
         },
         {
           allergy: 'Wheat',
-          severity: 'low'
+          severity: 'Low'
         },
         {
           allergy: 'Strawberries',
-          severity: 'high'
+          severity: 'High'
         }
       ]
     }
