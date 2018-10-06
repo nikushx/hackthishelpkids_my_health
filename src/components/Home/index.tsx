@@ -18,10 +18,12 @@ export type Props = {
 }
 
 type State = {
+// making the state an array of strings
   log: string[];
 };
-
+// Props always go first
 class IHomePage extends React.Component<Props, State> {
+// must always initilize the state before use
   state = { log: [] }
 
   sendNewCommand = () => {
