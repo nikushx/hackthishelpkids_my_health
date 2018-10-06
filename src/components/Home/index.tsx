@@ -5,6 +5,7 @@ import { cmdActions, CMDAction } from '../../store/cmd';
 import IntroText from '../../components/common/IntroText';
 import { connect } from 'react-redux';
 import { Dispatch, bindActionCreators } from 'redux';
+import LoginButtons from '../LoginButtons';
 
 const cmdWindowStyles: React.CSSProperties = {
   padding: '10px'
@@ -35,6 +36,7 @@ class IHomePage extends React.Component<Props, State> {
       <div style={cmdWindowStyles}>
         <p onClick={this.sendNewCommand}>Hello</p>
         <IntroText>Nikush Dalia</IntroText>
+        <LoginButtons/>
       </div>
     );
   }

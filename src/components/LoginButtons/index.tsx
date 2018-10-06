@@ -1,8 +1,7 @@
 import * as React from 'react';
-import Button from './common/Button';
+import Button from '../common/Button';
 
-
-class LoginButtons extends React.Component<Props> {
+class LoginButtons extends React.Component {
 
 
   login() {
@@ -16,32 +15,30 @@ class LoginButtons extends React.Component<Props> {
   }
   render() {
     return (
-// Login with Username and Password
-      <Button
-          bgColor="green"
-          text="Login"
+      <div>
+        <Button
+            bgColor="green"
+            text="Login"
+            onClick={
+              this.login
+            }
+          />
+        <Button
+          bgColor="blue"
+          text="Login with Facebook"
           onClick={
-            () => this.login()
+            this.loginWithFacebook
           }
         />
-// Login with Facebook
-      <Button
-         bgColor="blue"
-         text="Login with Facebook"
-         onClick={
-          () => this.loginWithFacebook()
-         }
-      />
-// Login with Google
-      <Button 
-        bgColor="red"
-        text="Login with Google"
-        onClick={
-          () => this.loginWithGoogle()
-         }
-      
-      />
+        <Button 
+          bgColor="red"
+          text="Login with Google"
+          onClick={
+            this.loginWithGoogle
+          }
         
+        />
+      </div>
     );
   }
 }
