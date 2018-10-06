@@ -1,14 +1,16 @@
-import { createStore, /* applyMiddleware */ } from 'redux';
+import { createStore, applyMiddleware, compose } from 'redux';
 import { createEpicMiddleware } from 'redux-observable';
-
-// import { composeEnhancers } from './utils';
 import rootReducer from './root-reducer';
 import rootEpic from './root-epic';
 import services from '../services';
+import { createBrowserHistory, History } from 'history';
+import { connectRouter, routerMiddleware } from 'connected-react-router'
 
 export const epicMiddleware = createEpicMiddleware(rootEpic, {
   dependencies: services,
 });
+
+export const history: History = createBrowserHistory()
 
 function configureStore(initialState?: object) {
   // configure middlewares
@@ -16,7 +18,12 @@ function configureStore(initialState?: object) {
   // compose enhancers
   // const enhancer = composeEnhancers(applyMiddleware(...middlewares));
   // create store
-  return createStore(rootReducer, initialState!, undefined);
+  return createStore(connectRouter(history)(rootReducer), initialState!, compose(
+    applyMiddleware(
+      routerMiddleware(history) // for dispatching history
+      // other middleware here...
+    )
+  ));
 }
 
 // pass an optional param to rehydrate state on app start
