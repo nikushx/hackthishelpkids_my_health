@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Input from '../common/Input';
 import { StateType } from 'typesafe-actions';
 import { rootReducer } from '../../store';
 import { CMDAction, cmdActions } from '../../store/cmd';
@@ -16,15 +15,15 @@ const navStyles: React.CSSProperties = {
   height: '40px'
 };
 
-const inputStyles: React.CSSProperties = {
-  backgroundColor: '#3700B3',
-  position: 'absolute',
-  width: '100%',
-  height: '100%',
-  padding: '0 10px',
-  color: '#fff',
-  fontFamily: `'Source Code Pro', monospace`
-}
+// const inputStyles: React.CSSProperties = {
+//   backgroundColor: '#3700B3',
+//   position: 'absolute',
+//   width: '100%',
+//   height: '100%',
+//   padding: '0 10px',
+//   color: '#fff',
+//   fontFamily: `'Source Code Pro', monospace`
+// }
 
 const commands = [
   'help',
@@ -63,12 +62,6 @@ class ICMDLine extends React.Component<object, State> {
           </Link>
           */
         }
-        <Input
-          styles={inputStyles}
-          placeholder="> type commands here"
-          onChange={this.onInputChange}
-          sendCommand={this.sendCommand}
-        />
       </div>
     );
   }
