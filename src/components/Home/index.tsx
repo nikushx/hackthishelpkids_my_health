@@ -6,6 +6,7 @@ import IntroText from '../../components/common/IntroText';
 import { connect } from 'react-redux';
 import { Dispatch, bindActionCreators } from 'redux';
 import LoginButtons from '../LoginButtons';
+import LoginForm from '../LoginForm';
 
 const cmdWindowStyles: React.CSSProperties = {
   padding: '10px'
@@ -36,6 +37,7 @@ class IHomePage extends React.Component<Props, State> {
       <div style={cmdWindowStyles}>
         <p onClick={this.sendNewCommand}>Hello</p>
         <IntroText>Nikush Dalia</IntroText>
+        <LoginForm />
         <LoginButtons/>
       </div>
     );
